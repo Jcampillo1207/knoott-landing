@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Loader, MailCheck, Send } from "lucide-react";
-import { send } from "@/app/api/route";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { send } from "@/lib/api/route";
 
 export function WaitlistForm({ className }: { className?: string }) {
   const [email, setEmail] = useState("");
