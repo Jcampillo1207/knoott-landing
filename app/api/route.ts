@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 
-export async function send(email: string) {
+export default async function send(email: string) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { data } = await resend.emails.send({
