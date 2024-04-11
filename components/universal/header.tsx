@@ -55,7 +55,7 @@ export const Header = () => {
           asChild
           className="text-xs py-2 h-fit hidden md:flex"
         >
-          <Link href={"#"}>Inicio</Link>
+          <Link href={"#inicio"}>Inicio</Link>
         </Button>
         <Button
           variant={"outline"}
@@ -63,7 +63,7 @@ export const Header = () => {
           asChild
           className="text-xs py-2 h-fit hidden md:flex"
         >
-          <Link href={"#"}>Producto</Link>
+          <Link href={"#producto"}>Producto</Link>
         </Button>
         <Button
           variant={"outline"}
@@ -71,7 +71,7 @@ export const Header = () => {
           asChild
           className="text-xs py-2 h-fit hidden md:flex"
         >
-          <Link href={"#"}>Acerca</Link>
+          <Link href={"#acerca"}>Acerca</Link>
         </Button>
         <Popover>
           <PopoverTrigger asChild>

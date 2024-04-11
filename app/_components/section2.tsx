@@ -120,7 +120,7 @@ export const Section2 = () => {
   ];
 
   return (
-    <SectionUniversal className="w-full bg-muted/50 mx-auto h-fit items-start justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 lg:grid-cols-2 border-y">
+    <SectionUniversal className="w-full bg-muted/50 mx-auto h-fit items-start justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 lg:grid-cols-2 border-y" id="producto">
       <div className="w-full h-fit items-start justify-start flex flex-col gap-y-10 lg:gap-y-14">
         <span className="w-full h-fit items-center justify-start flex gap-x-3 pb-5 border-b">
           <Blend className="size-5 text-muted-foreground" />

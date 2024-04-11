@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="scroll-smooth">
       <HeroSection />
       <Section2 />
       <Section3 />

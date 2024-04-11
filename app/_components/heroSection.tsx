@@ -8,7 +8,7 @@ import { Suspense } from "react";
 
 export const HeroSection = () => {
   return (
-    <SectionUniversal className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-12 gap-10 py-28 md:py-32 lg:py-36 xl:py-48">
+    <SectionUniversal className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-12 gap-10 py-28 md:py-32 lg:py-36 xl:py-48" id="inicio">
       <div className="w-full flex flex-col gap-y-5 md:gap-y-7 items-start justify-center col-span-1 xl:col-span-7">
         <HeroTitle className="text-5xl font-semibold tracking-tight text-pretty break-normal text-foreground/50 md:break-words">
           Mejora la <span className="text-foreground w-fit">experiencia</span>{" "}

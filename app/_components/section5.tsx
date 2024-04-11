@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export const Section5 = () => {
   return (
-    <SectionUniversal className="w-full mx-auto h-fit items-start px-5 md:px-0 lg:px-0 xl:px-36 justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 xl:grid-cols-2">
+    <SectionUniversal className="w-full mx-auto h-fit items-start px-5 md:px-0 lg:px-0 xl:px-36 justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 xl:grid-cols-2" id="acerca">
       <span className="w-full h-fit items-center justify-between flex gap-x-3 pb-5 border-b col-span-1 xl:col-span-2 md:px-7 lg:px-14 xl:px-0">
         <div className="h-fit w-fit items-center justify-start gap-x-3 flex">
           <IntelloLogo className="size-5" />

@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/universal/header";
 import { Toaster } from "sonner";
+import { cn } from "@/lib/utils";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -48,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("scroll-smooth", inter.className)}>
         <Header />
         {children}
         <Toaster position="top-left" />
