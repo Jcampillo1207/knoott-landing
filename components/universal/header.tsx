@@ -41,7 +41,7 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        "w-full h-fit items-center justify-between flex gap-x-10 px-5 md:px-7 lg:px-14 xl:px-36 py-4 bg-background border-b fixed z-[999] duration-300 ease-in-out",
+        "w-full h-fit items-center justify-between flex gap-x-10 px-5 md:px-7 lg:px-14 xl:px-36 py-4 bg-background border-b fixed z-[999] duration-1000 ease-in-out",
         (visible && "-translate-y-0") || "-translate-y-full"
       )}
     >
