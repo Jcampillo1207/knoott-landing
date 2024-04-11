@@ -11,6 +11,7 @@ import { send } from "@/lib/api/route";
 export function WaitlistForm({ className }: { className?: string }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle");
+  const [isExploding, setIsExploding] = useState(false);
 
   const handleChange = (event: any) => {
     setEmail(event.target.value);
@@ -25,6 +26,7 @@ export function WaitlistForm({ className }: { className?: string }) {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
+    setIsExploding(false)
     setStatus("sending");
     toast("Cargando...", {
       unstyled: false,
@@ -36,6 +38,7 @@ export function WaitlistForm({ className }: { className?: string }) {
     });
     await send(email);
     setStatus("idle");
+    setIsExploding(true)
     toast.success("Correo enviado con éxito...", {
       unstyled: false,
       icon: <MailCheck className="size-4 text-white" />,
@@ -54,6 +57,7 @@ export function WaitlistForm({ className }: { className?: string }) {
         className
       )}
     >
+
       <Input
         value={email}
         type="email"

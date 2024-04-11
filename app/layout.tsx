@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     type: "website",
     url: "knoott.com",
     title: "Knoott",
-    description: "Knoott es una plataforma digital para mesas de regalos de boda. Personaliza tu lista, facilita a tus invitados el regalar y ofrece diversos métodos de pago. Configura fácilmente para que amigos y familiares contribuyan sin complicaciones.",
+    description:
+      "Knoott es una plataforma digital para mesas de regalos de boda. Personaliza tu lista, facilita a tus invitados el regalar y ofrece diversos métodos de pago. Configura fácilmente para que amigos y familiares contribuyan sin complicaciones.",
     siteName: "Knoott",
     images: [
       {

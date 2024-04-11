@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { KnootWelcome } from "@/components/utilities/mailTemplate";
 
 export async function send(email: string) {
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -8,7 +9,7 @@ export async function send(email: string) {
   const { data } = await resend.emails.send({
     from: "Knoott <waitlist@knoott.com>",
     to: [email],
-    subject: "Hello world",
-    text: "This is the email body in plain text.",
+    subject: "Gracias por entrar a nuestra lista de espera",
+    react: KnootWelcome(),
   });
 }
