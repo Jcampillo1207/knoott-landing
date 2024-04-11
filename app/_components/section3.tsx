@@ -9,6 +9,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { useSwipeable } from "react-swipeable";
 
 interface BadgeProps {
   item: string;
@@ -75,6 +76,19 @@ export const Section3 = () => {
       text: "Hola como estás?",
       image: "/prueba.jpg",
     },
+    {
+      badges: [
+        {
+          item: "Ingresos",
+        },
+        {
+          item: "Ingresos",
+        },
+      ],
+      title: "Diferentes métodos de pago",
+      text: "Hola como estás?",
+      image: "/prueba.jpg",
+    },
   ];
 
   const [activeCardIndex, setActiveCardIndex] = useState(0);
@@ -86,6 +100,16 @@ export const Section3 = () => {
   const timerInterval = 10000;
   const [isVisible, setIsVisible] = useState(false);
   const referenceRef = useRef(null);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () =>
+      setActiveCardIndex((prevIndex) => (prevIndex + 1) % Cards.length),
+    onSwipedRight: () =>
+      setActiveCardIndex(
+        (prevIndex) => (prevIndex - 1 + Cards.length) % Cards.length
+      ),
+    trackMouse: true,
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -108,10 +132,8 @@ export const Section3 = () => {
 
   useEffect(() => {
     if (isVisible) {
-      // Aquí puedes iniciar tus funciones cuando el componente es visible
       setIsPlaying(true);
     } else {
-      // Aquí puedes detener tus funciones cuando el componente no es visible
       setIsPlaying(false);
     }
   }, [isVisible]);
@@ -235,6 +257,7 @@ export const Section3 = () => {
             return (
               <div
                 key={index}
+                {...handlers}
                 className={cn(
                   "flex-1 items-start justify-start min-w-full hidden md:flex flex-col md:min-w-[100px] h-fit w-full duration-500 ease-in-out hover:-translate-y-3",
                   isActive
@@ -264,13 +287,13 @@ export const Section3 = () => {
                       )}
                     >
                       <div className="w-full h-fit items-center justify-between flex transition-all">
-                        <span className="flex gap-x-2 items-center justify-start">
+                        <span className="flex flex-wrap gap-2">
                           {badges.map((badge, index) => {
                             return (
                               <Badge
                                 key={index}
                                 variant="outline"
-                                className="bg-muted/50 text-background"
+                                className="bg-muted/50 text-background flex-1 min-w-fit max-w-fit"
                               >
                                 {badge.item}
                               </Badge>
