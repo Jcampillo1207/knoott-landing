@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { KnoottLogoLarge } from "../vectors/knoottlogo";
+import { KnoottLogoLarge, KnoottLogoMain } from "../vectors/knoottlogo";
 import { NavMobile } from "./navMobile";
 import {
   Popover,
@@ -46,7 +46,7 @@ export const Header = () => {
       )}
     >
       <div className="h-fit w-fit">
-        <KnoottLogoLarge className="h-6 w-auto" />
+        <KnoottLogoMain className="h-6 w-auto" />
       </div>
       <div className="w-full h-fit items-center justify-end gap-x-2 flex">
         <Button
@@ -63,7 +63,7 @@ export const Header = () => {
           asChild
           className="text-xs py-2 h-fit hidden md:flex"
         >
-          <Link href={"#"}>Acerca</Link>
+          <Link href={"#"}>Producto</Link>
         </Button>
         <Button
           variant={"outline"}
@@ -71,7 +71,7 @@ export const Header = () => {
           asChild
           className="text-xs py-2 h-fit hidden md:flex"
         >
-          <Link href={"#"}>Producto</Link>
+          <Link href={"#"}>Acerca</Link>
         </Button>
         <Popover>
           <PopoverTrigger asChild>

@@ -238,11 +238,11 @@ export const StorieCards = ({ Cards }: any) => {
               </div>
               <div
                 className={cn(
-                  "w-full h-fit items-start justify-start opacity-0 flex flex-col gap-y-3 md:gap-y-7 p-0 md:p-7 duration-500 ease-in-out pt-10",
-                  isActive ? "opacity-100" : ""
+                  "w-full h-fit items-start justify-start hidden flex-col gap-y-3 md:gap-y-7 p-0 md:p-7 duration-500 ease-in-out pt-10",
+                  isActive ? "opacity-100 flex" : ""
                 )}
               >
-                <h1 className="text-3xl md:text-3xl xl:text-3xl antialiased tracking-wide font-bold">
+                <h1 className={cn("text-3xl md:text-3xl xl:text-3xl antialiased tracking-wide font-bold")}>
                   {card.title}
                 </h1>
                 <p className="text-base md:text-lg text-muted-foreground antialiased tracking-wider">

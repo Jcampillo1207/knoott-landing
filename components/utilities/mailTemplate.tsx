@@ -17,7 +17,7 @@ export const KnootWelcome = () => (
     <Head />
     <Preview>La nueva forma de regalar</Preview>
     <Body style={main}>
-      <Container style={container}>
+      <Container>
         <Img
           src={
             "https://flsqnnbcmtmltxmnygwe.supabase.co/storage/v1/object/public/hola/logo%20(1).png"
@@ -30,7 +30,8 @@ export const KnootWelcome = () => (
         <Text style={paragraph1}>Hola,</Text>
         <Text style={paragraph}>
           Bienvenid@ a Knoott, ingresaste tu correo electrónico en nuestra lista
-          de espera, nosotros te pondremos al tanto sobre la fecha de lanzamiento
+          de espera, nosotros te pondremos al tanto sobre la fecha de
+          lanzamiento
         </Text>
         <Section style={btnContainer}>
           <Button style={button} href="https://knoott.com">
@@ -43,20 +44,21 @@ export const KnootWelcome = () => (
           Equipo Knoott
         </Text>
         <Hr style={hr} />
+        <Text style={footer}>Av. Pdte Carranza 68, Torreón, Coahuila</Text>
       </Container>
     </Body>
   </Html>
 );
 
 const main = {
-  backgroundColor: "#ffffff",
+  backgroundColor: "white",
+  width: "fit-content",
+  height: "fit-content",
+  padding: "40px 40px",
+  borderRadius: "40px",
+  border: "#E2E8F0 solid",
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-};
-
-const container = {
-  margin: "0 auto",
-  padding: "20px 0 48px",
 };
 
 const logo = {
@@ -93,11 +95,11 @@ const button = {
 };
 
 const hr = {
-  borderColor: "#cccccc",
+  borderColor: "#E2E8F0",
   margin: "20px 0",
 };
 
 const footer = {
-  color: "#8898aa",
+  color: "#64748B",
   fontSize: "12px",
 };

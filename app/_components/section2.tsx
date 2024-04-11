@@ -144,8 +144,8 @@ export const Section2 = () => {
             <TabsTrigger value="regalos">Saldo</TabsTrigger>
             <TabsTrigger value="retiro">Aportaciones</TabsTrigger>
           </TabsList>
-          <TabsContent value="mesa" className="pt-5 lg:pt-14">
-            <Accordion defaultValue="item-1" type="single">
+          <TabsContent  value="mesa" className="pt-5 lg:pt-14">
+            <Accordion defaultValue="item-1" type="single" collapsible>
               {mesaItems.map((item, index) => {
                 return (
                   <AccordionShow
@@ -161,7 +161,7 @@ export const Section2 = () => {
             </Accordion>
           </TabsContent>
           <TabsContent value="boda" className="pt-5 lg:pt-14">
-            <Accordion defaultValue="item-1" type="single">
+            <Accordion defaultValue="item-1" type="single" collapsible>
               {bodaItems.map((item, index) => {
                 return (
                   <AccordionShow
@@ -177,7 +177,7 @@ export const Section2 = () => {
             </Accordion>
           </TabsContent>
           <TabsContent value="regalos" className="pt-5 lg:pt-14">
-            <Accordion defaultValue="item-1" type="single">
+            <Accordion defaultValue="item-1" type="single" collapsible>
               {saldoItems.map((item, index) => {
                 return (
                   <AccordionShow
@@ -193,7 +193,7 @@ export const Section2 = () => {
             </Accordion>
           </TabsContent>
           <TabsContent value="dashboard" className="pt-5 lg:pt-14">
-            <Accordion defaultValue="item-1" type="single">
+            <Accordion defaultValue="item-1" type="single" collapsible>
               {statItems.map((item, index) => {
                 return (
                   <AccordionShow
@@ -209,7 +209,7 @@ export const Section2 = () => {
             </Accordion>
           </TabsContent>
           <TabsContent value="retiro" className="pt-5 lg:pt-14">
-            <Accordion defaultValue="item-1" type="single">
+            <Accordion defaultValue="item-1" type="single" collapsible>
               {apoItems.map((item, index) => {
                 return (
                   <AccordionShow
