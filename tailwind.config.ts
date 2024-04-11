@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      aspectRatio: {
+        storie: "1 / 1.66",
+      },
       colors: {
         contrast_pink: "#F7BBDD",
         contrast_blue: "#BACCEC",

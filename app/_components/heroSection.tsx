@@ -14,7 +14,7 @@ export const HeroSection = () => {
           Mejora la <span className="text-foreground w-fit">experiencia</span>{" "}
           en tu mesa de regalos
         </HeroTitle>
-        <HeroText>
+        <HeroText className="font-medium">
           Knoott es una plataforma digital para mesas de regalos de boda.
           Personaliza tu lista, facilita a tus invitados el regalar y ofrece
           diversos métodos de pago. Configura fácilmente para que amigos y

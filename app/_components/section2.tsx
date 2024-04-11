@@ -129,8 +129,8 @@ export const Section2 = () => {
           </p>
         </span>
         <div className="w-full h-fit items-start justify-start">
-          <HeroTitle className="text-4xl md:text-6xl lg:text-4xl xl:text-4xl max-w-2xl xl:leading-[50px]">
-            Un producto hecho para que tu mesa de regalos sea una experiencia
+          <HeroTitle className="text-4xl md:text-6xl lg:text-4xl xl:text-4xl max-w-2xl text-foreground/50">
+            Un <span className="text-foreground">producto</span> hecho para que tu mesa de regalos sea una <span className="text-foreground">experiencia </span>
             inolvidable
           </HeroTitle>
         </div>
