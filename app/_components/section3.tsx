@@ -76,19 +76,6 @@ export const Section3 = () => {
       text: "Hola como estás?",
       image: "/prueba.jpg",
     },
-    {
-      badges: [
-        {
-          item: "Ingresos",
-        },
-        {
-          item: "Ingresos",
-        },
-      ],
-      title: "Diferentes métodos de pago",
-      text: "Hola como estás?",
-      image: "/prueba.jpg",
-    },
   ];
 
   const [activeCardIndex, setActiveCardIndex] = useState(0);
@@ -267,7 +254,7 @@ export const Section3 = () => {
               >
                 <div
                   className={cn(
-                    "w-full h-[600px] p-1 border rounded-2xl cursor-pointer",
+                    "w-full aspect-square md:aspect-auto md:h-[600px] p-1 border rounded-2xl cursor-pointer",
                     isActive ? "cursor-default" : ""
                   )}
                   onClick={() => setActiveCardIndex(index)}
