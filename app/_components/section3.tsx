@@ -11,53 +11,56 @@ export const Section3 = () => {
     {
       badges: [
         {
-          item: "Ingresos",
+          item: "Sencillez",
         },
         {
-          item: "Ingresos",
+          item: "Facilidad",
         },
       ],
-      title: "Diferentes métodos de pago",
-      text: "Hola como estás?",
+      title: "Ingresa con un click",
+      text: "Ingresa a la mesa de regalos digital de la forma mas sencilla, dando click al link, o bien ingresando el código de la boda en nuestra página web",
       image: "/prueba.jpg",
     },
     {
       badges: [
         {
-          item: "Ingresos",
+          item: "Libertad",
         },
         {
-          item: "Ingresos",
-        },
-        {
-          item: "Ingresos",
+          item: "Variedad",
         },
       ],
-      title: "Diferentes métodos de pago",
-      text: "Hola como estás?",
+      title: "Selección de regalo",
+      text: "Navega por los artículos favoritos de los novios y al seleccionar, podras aportar lo deseado en ese regalo.",
       image: "/prueba2.jpg",
     },
     {
       badges: [
         {
-          item: "Ingresos",
+          item: "Opciones",
+        },
+        {
+          item: "Seguridad",
+        },
+        {
+          item: "Selección",
         },
       ],
       title: "Diferentes métodos de pago",
-      text: "Hola como estás?",
+      text: "Diversas opciones de pago para facilitar el regalo del invitado. Regala con tarjeta de debito, crédito, ApplePay, GooglePay y transferencia bancaria SPEI.",
       image: "/prueba3.jpg",
     },
     {
       badges: [
         {
-          item: "Ingresos",
+          item: "Variedad",
         },
         {
-          item: "Ingresos",
+          item: "Facilidad",
         },
       ],
-      title: "Diferentes métodos de pago",
-      text: "Hola como estás?",
+      title: "Regala de la manera más sencilla",
+      text: "Optimizamos el proceso en para que el regalar en 3 clicks se convierta en lo más sencillo y eficaz dentro de una mesa de regalos.",
       image: "/prueba.jpg",
     },
   ];
@@ -72,8 +75,9 @@ export const Section3 = () => {
       </div>
       <div className="w-full h-fit items-start justify-start">
         <HeroTitle className="text-4xl text-pretty md:text-6xl lg:text-4xl xl:text-4xl max-w-2xl text-foreground/50">
-          Contribuye al <span className="text-foreground">futuro </span> de tus
-          seres queridos, convierte tu regalo en una <span className="text-foreground">experiencia </span> inolvidable.
+          Regala de la manera mas{" "}
+          <span className="text-foreground">sencilla e innovadora</span>,
+          convirtiendo tu regalo en una experiencia inolvidable.
         </HeroTitle>
       </div>
       <StorieCards Cards={Cards} />

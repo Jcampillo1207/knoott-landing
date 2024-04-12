@@ -16,10 +16,11 @@ export const Section4 = () => {
           Gestiona tu <span className="text-foreground">mesa de regalos </span>
         </HeroTitle>
         <HeroText className="text-pretty max-w-2xl font-medium">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-          veritatis velit inventore, voluptates, repellat recusandae quis
-          voluptatum labore ipsa porro nostrum corrupti magnam obcaecati nobis
-          harum impedit quidem in tenetur.
+          Dentro del panel administrador, podrás personalizar tu lista de
+          regalos y monitorear las contribuciones recibidas. Accede a
+          herramientas para visualizar estadísticas detalladas y ajustar
+          preferencias, facilitando la organización y haciendo tu experiencia
+          nupcial más especial.
         </HeroText>
       </div>
       <div className="w-full h-fit md:h-[650px] overflow-hidden relative mt-5 md:pt-10 lg:mt-14 xl:mt-16">
