@@ -12,10 +12,12 @@ import {
 import { WaitlistForm } from "./inputWaitlist";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const router = useRouter();
 
   const checkScroll = () => {
     const currentScrollY = window.scrollY;
@@ -60,10 +62,10 @@ export const Header = () => {
         <Button
           variant={"outline"}
           size={"sm"}
-          asChild
           className="text-xs py-2 h-fit hidden md:flex"
+          onClick={() => router.push("#producto")}
         >
-          <Link href={"#producto"}>Producto</Link>
+          Producto
         </Button>
         <Button
           variant={"outline"}

@@ -48,8 +48,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn("scroll-smooth", inter.className)}>
+    <html className="scroll-smooth" lang="es">
+      <body className={cn("scroll-smooth ", inter.className)}>
         <Header />
         {children}
         <Toaster position="top-left" />
