@@ -1,4 +1,5 @@
-import { CardProps } from "@/lib/types";
+"use client"
+
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useSwipeable } from "react-swipeable";

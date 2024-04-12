@@ -1,5 +1,3 @@
-"use client";
-
 import { SectionUniversal } from "@/components/layout/sections";
 import { HeroTitle } from "@/components/text/texts";
 import { Users } from "lucide-react";
