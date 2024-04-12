@@ -188,7 +188,7 @@ export const StorieCards = ({ Cards }: any) => {
                     className={cn(
                       "w-full h-full z-20 items-start justify-end flex gap-y-1 md:gap-y-5 flex-col bg-transparent backdrop-blur-[3px] duration-500 ease-in-out p-3",
                       isActive &&
-                        "backdrop-blur-none bg-gradient-to-t from-black/50 via-transparent to-transparent"
+                        "backdrop-blur-none bg-gradient-to-t from-black/30 via-transparent to-transparent"
                     )}
                   >
                     <div className="w-full h-fit items-center justify-between flex transition-all">
@@ -198,7 +198,7 @@ export const StorieCards = ({ Cards }: any) => {
                             <Badge
                               key={index}
                               variant="outline"
-                              className="bg-muted/50 text-background flex-1 min-w-fit max-w-fit"
+                              className="bg-background/50 text-muted-foreground/80 flex-1 min-w-fit max-w-fit"
                             >
                               {badge.item}
                             </Badge>

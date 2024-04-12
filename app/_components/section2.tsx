@@ -8,7 +8,7 @@ import { AccordionShow } from "@/components/interface/accordionShow";
 export const Section2 = () => {
   const mesaItems = [
     {
-      title: "Personalización",
+      title: "Personaliza",
       value: "item-1",
       content:
         "Personaliza tu mesa de regalos seleccionando los artículos de mayor interés para ti y tus invitados. Elige entre una amplia variedad de opciones y crea una lista única que refleje tus preferencias y estilo.",
@@ -22,7 +22,7 @@ export const Section2 = () => {
       icon: "Forward",
     },
     {
-      title: "Configurable",
+      title: "Configura",
       value: "item-3",
       content:
         "Si no encuentras algún producto específico dentro de nuestras opciones, no te preocupes. Puedes configurar y añadir cualquier artículo a tu mesa de regalos, asegurándote de que se ajuste perfectamente a tus necesidades y deseos.",
@@ -46,7 +46,7 @@ export const Section2 = () => {
       icon: "Link",
     },
     {
-      title: "Temporizador",
+      title: "Cuenta regresiva",
       value: "item-3",
       content:
         "Mantén a tus invitados emocionados y a la expectativa con un contador regresivo que muestra el tiempo restante hasta el día de tu evento. Este temporizador agrega un toque de emoción y anticipación a tu mesa de regalos.",

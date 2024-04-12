@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/universal/header";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/universal/footer";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body className={cn("scroll-smooth ", inter.className)}>
         <Header />
         {children}
+        <Footer />
         <Toaster position="top-left" />
       </body>
     </html>
