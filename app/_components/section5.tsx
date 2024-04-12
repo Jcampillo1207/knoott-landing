@@ -8,7 +8,10 @@ import Link from "next/link";
 
 export const Section5 = () => {
   return (
-    <SectionUniversal className="w-full mx-auto h-fit items-start px-5 md:px-0 lg:px-0 xl:px-36 justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 xl:grid-cols-2" id="acerca">
+    <SectionUniversal
+      className="w-full mx-auto h-fit items-start px-5 md:px-0 lg:px-0 xl:px-36 justify-start grid grid-cols-1 gap-10 md:gap-14 xl:gap-24 xl:grid-cols-2"
+      id="acerca"
+    >
       <span className="w-full h-fit items-center justify-between flex gap-x-3 pb-5 border-b col-span-1 xl:col-span-2 md:px-7 lg:px-14 xl:px-0">
         <div className="h-fit w-fit items-center justify-start gap-x-3 flex">
           <IntelloLogo className="size-5" />
@@ -45,9 +48,9 @@ export const Section5 = () => {
       </div>
       <div className="w-full h-fit items-center justify-center flex relative">
         <div className="w-[2000px] h-full absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 overflow-visible hidden md:flex xl:hidden">
-            <Image src={"/bg.png"} fill className="object-contain" alt="Bg"/>
+          <Image src={"/bg.png"} fill className="object-contain" alt="Bg" />
         </div>
-        <div className="w-[70%] md:w-[50%] h-auto aspect-square bg-muted rounded-3xl flex items-center justify-center border z-50">
+        <div className="w-[70%] md:w-[30%] xl:w-[50%] h-auto aspect-square bg-muted rounded-3xl flex items-center justify-center border z-50">
           <IntelloLogoBig className="size-[60%]" />
         </div>
       </div>
