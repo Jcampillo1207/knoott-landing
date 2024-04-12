@@ -34,13 +34,13 @@ export const Section5 = () => {
             mundo digital en constante evolución.
           </HeroText>
           <Button
-            variant={"link"}
+            variant={"outline"}
             size={"default"}
             asChild
-            className="text-foreground antialiased font-medium flex gap-x-1 px-0"
+            className="text-foreground antialiased font-medium flex gap-x-1"
           >
             <Link href={"https://intelloai.com"} target="_blank">
-              Saber más
+              Conoce Intello AI
               <ArrowRight className="size-3" />
             </Link>
           </Button>

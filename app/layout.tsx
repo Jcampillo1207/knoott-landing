@@ -5,6 +5,7 @@ import { Header } from "@/components/universal/header";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/universal/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -56,6 +57,7 @@ export default function RootLayout({
         <Footer />
         <Toaster position="top-left" />
       </body>
+      <GoogleAnalytics gaId="G-WXM1FEZR76" />
     </html>
   );
 }
