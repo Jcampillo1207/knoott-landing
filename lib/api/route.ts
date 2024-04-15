@@ -7,7 +7,7 @@ export async function send(email: string) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { data } = await resend.emails.send({
-    from: "Knoott <waitlist@knoott.com>",
+    from: "Knoott <soporte@knoott.com>",
     to: [email],
     subject: "Gracias por entrar a nuestra lista de espera",
     react: KnootWelcome(),
