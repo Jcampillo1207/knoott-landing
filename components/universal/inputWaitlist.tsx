@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import { Loader, MailCheck, Send } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
-import { send } from "@/lib/api/route";
+import { send } from "@/lib/route";
 
 export function WaitlistForm({ className }: { className?: string }) {
   const [email, setEmail] = useState("");

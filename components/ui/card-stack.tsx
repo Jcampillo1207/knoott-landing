@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { KnoottLogoMain } from "../vectors/knoottlogo";
 
 let interval: any;
 
@@ -55,16 +56,19 @@ export const CardStack = ({
               zIndex: cards.length - index,
             }}
           >
-            <div className="font-medium text-muted-foreground antialiased text-base md:text-lg leading-loose md:leading-7 lg:leading-9">
+            <div className="font-medium text-muted-foreground antialiased text-sm lg:text-base max-w-md leading-loose md:leading-7 lg:leading-9">
               {card.content}
             </div>
-            <div>
-              <p className="text-neutral-500 font-medium dark:text-white">
-                {card.name}
-              </p>
-              <p className="text-neutral-400 font-normal dark:text-neutral-200">
-                {card.designation}
-              </p>
+            <div className="flex items-end justify-between w-full">
+              <span>
+                <p className="text-neutral-500 font-medium dark:text-white">
+                  {card.name}
+                </p>
+                <p className="text-neutral-400 font-normal dark:text-neutral-200">
+                  {card.designation}
+                </p>
+              </span>
+                <KnoottLogoMain className="h-5"/>
             </div>
           </motion.div>
         );

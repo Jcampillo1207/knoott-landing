@@ -40,7 +40,7 @@ export const NavMobile = () => {
                   asChild
                   className="w-full items-center justify-between flex py-3 text-base"
                 >
-                  <Link href={"#inicio"}>
+                  <Link href={"/#inicio"}>
                     Inicio
                     <ChevronRight className="size-4" />
                   </Link>
@@ -53,7 +53,7 @@ export const NavMobile = () => {
                   asChild
                   className="w-full items-center justify-between flex py-3 text-base"
                 >
-                  <Link href={"#producto"}>
+                  <Link href={"/#producto"}>
                     Producto
                     <ChevronRight className="size-4" />
                   </Link>
@@ -66,7 +66,7 @@ export const NavMobile = () => {
                   asChild
                   className="w-full items-center justify-between flex py-3 text-base"
                 >
-                  <Link href={"#acerca"}>
+                  <Link href={"/#acerca"}>
                     Acerca
                     <ChevronRight className="size-4" />
                   </Link>
