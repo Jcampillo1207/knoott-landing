@@ -15,6 +15,7 @@ type form = {
   competenceLike: string | null;
   competenceDislike: string | null;
   characteristics: string | null;
+  prefer: string;
 };
 
 export const postSheetsData = async (form: form) => {
@@ -59,6 +60,7 @@ export const postSheetsData = async (form: form) => {
           form.competenceLike,
           form.competenceDislike,
           form.characteristics,
+          form.prefer,
         ],
       ],
     },

@@ -32,6 +32,7 @@ const FormPage = () => {
   const [device, setDevice] = useState<string>("");
   const [platform, setPlatform] = useState<string>("");
   const [comp, setComp] = useState<string>("");
+  const [prefer, setPrefer] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -64,6 +65,7 @@ const FormPage = () => {
       competenceLike: formNames.competenceLike || "NA",
       competenceDislike: formNames.competenceDislike || "NA",
       characteristics: formNames.characteristics || "NA",
+      prefer,
     };
 
     setIsLoading(true);
@@ -387,6 +389,42 @@ const FormPage = () => {
                 </div>
               </>
             )}
+            <Separator className="my-5" />
+            <div className="w-full h-fit items-center justify-start grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10">
+              <Label className="antialiased text-sm tracking-wide">
+                ¿Te gustaría regalar por medio de una mesa de regalos digital, o
+                depositar a la cuenta de los novios?
+                <span className="text-destructive">*</span>
+              </Label>
+              <Select
+                value={prefer}
+                disabled={(isLoading && true) || false}
+                onValueChange={setPrefer}
+              >
+                <SelectTrigger
+                  className={cn(
+                    "w-full text-muted-foreground",
+                    platform !== "" && "text-foreground border-green-600 border"
+                  )}
+                >
+                  <SelectValue placeholder="Selecciona..." />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem
+                    className="text-muted-foreground focus:text-foreground"
+                    value="mesa de regalos digital"
+                  >
+                    Mesa de regalos digital
+                  </SelectItem>
+                  <SelectItem
+                    className="text-muted-foreground focus:text-foreground"
+                    value="depositar"
+                  >
+                    Despositar a cuenta
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
             {/* <Separator className="my-0 lg:my-5" />
             <div className="w-full h-fit items-center justify-start grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10">
               <Label className="antialiased text-sm tracking-wide">
