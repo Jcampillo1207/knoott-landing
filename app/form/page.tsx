@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { env } from "process";
+import { postSheetsData } from "@/lib/googlesheets";
 
 const FormPage = () => {
 	const [gender, setGender] = useState<string>("");
@@ -22,33 +23,17 @@ const FormPage = () => {
 	const [comp, setComp] = useState<string>("");
 	const [willing, setWilling] = useState<string>("");
 
-	console.log(gender);
-	console.log(device);
-	console.log(platform);
-	console.log(comp);
-	console.log("hola");
-	console.log(process.env.GOOGLE_PROJECT_ID);
-
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		const form = { gender, device, platform, comp, willing };
+		console.log(form)
 
 		try {
-			const response = await fetch("/api/sheets", {
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(form),
-			});
+			const response = await postSheetsData(form)
+			console.log(response)
 
-			if (!response.ok) {
-				throw new Error(`HTTP jeiej status: ${response.status}`);
-			} else {
-				const result = await response.json();
-				console.log(result);
-			}
+			//falta enviar a otra pagina o limpiar el formulario
+
 		} catch (error) {
 			console.error("Error fetching data: ", error);
 		}
