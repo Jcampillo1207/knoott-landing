@@ -297,7 +297,7 @@ const FormPage = () => {
             <Separator className="my-5" />
             <div className="w-full h-fit items-center justify-start grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10">
               <Label className="antialiased text-sm tracking-wide">
-                ¿Conoces algún sitio web para tu registro de regalos de bodas?
+                ¿Conoces algún sitio web de mesa de regalos para bodas?
                 <span className="text-destructive">*</span>
               </Label>
               <Select
