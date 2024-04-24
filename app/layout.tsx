@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Knoott",
     images: [
       {
-        url: `/knoottpp.png`,
+        url: `https://goqyungdmwicrcgmgpbr.supabase.co/storage/v1/object/public/banner/knoottpp.png?t=2024-04-24T06%3A06%3A17.243Z`,
         height: 450,
         width: 800,
       },

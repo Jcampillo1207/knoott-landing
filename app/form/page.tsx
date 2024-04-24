@@ -97,12 +97,13 @@ const FormPage = () => {
         <SectionUniversal className="py-28 md:py-32 lg:py-36 xl:py-48 grid grid-cols-1 lg:grid-cols-2 gap-24 md:gap-y-24 lg:gap-y-36">
           <div className="w-full h-fit items-start justify-start flex flex-col gap-y-5">
             <HeroTitle className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold tracking-tight text-pretty text-foreground/50 max-w-2xl">
-              Ayúdanos a <span className="text-foreground w-fit">mejorar</span>{" "}
-              nuestra plataforma...
+              Forma parte del{" "}
+              <span className="text-foreground w-fit">comienzo</span> de algo
+              extraordinario...
             </HeroTitle>
             <HeroText className="font-medium">
-              Para poder ofrecerte un producto de calidad necesitamos saber tu
-              opinión sobre como podríamos construir algo que pueda beneficiarte
+              Para poder brindarte un producto de calidad nos gustaría saber tu
+              opinión sobre las mesas de regalos de bodas.
             </HeroText>
             <Button
               className="mt-5 flex items-center"
