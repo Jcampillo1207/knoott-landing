@@ -91,6 +91,7 @@ const FormPage = () => {
       setDevice("");
       setPlatform("");
       setComp("");
+      setPrefer("")
     }
   };
   return (
@@ -404,7 +405,7 @@ const FormPage = () => {
                 <SelectTrigger
                   className={cn(
                     "w-full text-muted-foreground",
-                    platform !== "" && "text-foreground border-green-600 border"
+                    prefer !== "" && "text-foreground border-green-600 border"
                   )}
                 >
                   <SelectValue placeholder="Selecciona..." />
