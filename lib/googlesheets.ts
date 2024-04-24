@@ -41,10 +41,6 @@ export const postSheetsData = async (form: form) => {
     version: "v4",
   });
 
-  console.log(sheets);
-
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID);
-
   const response = await sheets.spreadsheets.values.append({
     spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
     range: "Hoja",
@@ -67,8 +63,6 @@ export const postSheetsData = async (form: form) => {
       ],
     },
   });
-
-  console.log(response.data);
 
   return response.data;
 };

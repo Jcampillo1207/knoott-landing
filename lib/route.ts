@@ -24,7 +24,7 @@ export async function sendForm() {
 
   const { data } = await resend.emails.send({
     from: "Knoott <soporte@knoott.com>",
-    to: ["jcampillo@intelloai.com", "angelamarreed@gmail.com"],
+    to: ["jcampillo@intelloai.com", "angelamarreed@gmail.com", "hmexsen@intelloai.com"],
     subject: "Nueva respuesta de formulario",
     text: "Se agregó un nuevo evento al formulario de Knoott",
   });
