@@ -48,7 +48,9 @@ export const Header = () => {
       )}
     >
       <div className="h-fit w-fit">
-        <KnoottLogoMain className="h-6 w-auto" />
+        <Link href={"/"}>
+          <KnoottLogoMain className="h-6 w-auto" />
+        </Link>
       </div>
       <div className="w-full h-fit items-center justify-end gap-x-2 flex">
         <Button

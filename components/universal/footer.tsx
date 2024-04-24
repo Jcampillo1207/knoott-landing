@@ -88,6 +88,14 @@ export const Footer = () => {
           >
             <Link href={"#acerca"}>Acerca de Knoott</Link>
           </Button>
+          <Button
+            variant={"link"}
+            size={"default"}
+            className="text-muted-foreground px-0 pl-2"
+            asChild
+          >
+            <Link href={"/form"}>Formulario</Link>
+          </Button>
         </div>
         <div className="w-full h-fit items-start justify-start flex flex-col gap-y-1">
           <Label className="text-base antialiased font-bold mb-1">
